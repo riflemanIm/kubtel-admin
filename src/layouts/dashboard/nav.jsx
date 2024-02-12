@@ -73,17 +73,16 @@ export default function Nav({ openNav, onCloseNav }) {
   const renderUpgrade = (
     <Box sx={{ px: 2.5, pb: 3, mt: 10 }}>
       <Stack alignItems="center" spacing={3} sx={{ pt: 5, borderRadius: 2, position: 'relative' }}>
-        <Box
+        {/* <Box
           component="img"
           src="/assets/illustrations/illustration_avatar.png"
           sx={{ width: 100, position: 'absolute', top: -50 }}
-        />
+        /> */}
 
         <Box sx={{ textAlign: 'center' }}>
-          <Typography variant="h6">Get more?</Typography>
-
           <Typography variant="body2" sx={{ color: 'text.secondary', mt: 1 }}>
-            From only $69
+            Техническая поддержка: <br />8 (861) 200-10-10
+            <br /> 8 800 222-17-30
           </Typography>
         </Box>
 
@@ -93,7 +92,7 @@ export default function Nav({ openNav, onCloseNav }) {
           variant="contained"
           color="inherit"
         >
-          Upgrade to Pro
+          выход
         </Button>
       </Stack>
     </Box>
