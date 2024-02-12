@@ -60,15 +60,16 @@ export function overrides(theme) {
     MuiButton: {
       styleOverrides: {
         containedInherit: {
+          fontWeight: 600,
           color: theme.palette.common.white,
-          backgroundColor: theme.palette.grey[800],
+          background: 'linear-gradient(138.41deg, #FF1167 2.99%, #FA82B9 97.91%)',
           '&:hover': {
             color: theme.palette.common.white,
-            backgroundColor: theme.palette.grey[800],
+            background: 'rgba(251, 158, 180, 1)',
           },
         },
         sizeLarge: {
-          minHeight: 48,
+          minHeight: 52,
         },
       },
     },
@@ -139,6 +140,13 @@ export function overrides(theme) {
       styleOverrides: {
         root: {
           ...theme.typography.body2,
+        },
+      },
+    },
+    MuiToolbar: {
+      styleOverrides: {
+        root: {
+          padding: 0,
         },
       },
     },

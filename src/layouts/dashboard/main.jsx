@@ -16,11 +16,12 @@ export default function Main({ children, sx, ...other }) {
   return (
     <Box
       component="main"
-      sx={{
+      sx={(theme) => ({
         flexGrow: 1,
         minHeight: 1,
         display: 'flex',
         flexDirection: 'column',
+        mt: 3,
         py: `${HEADER.H_MOBILE + SPACING}px`,
         ...(lgUp && {
           px: 2,
@@ -28,7 +29,8 @@ export default function Main({ children, sx, ...other }) {
           width: `calc(100% - ${NAV.WIDTH}px)`,
         }),
         ...sx,
-      }}
+        bgcolor: theme.palette.background.paper,
+      })}
       {...other}
     >
       {children}

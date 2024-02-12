@@ -92,7 +92,7 @@ export default function Nav({ openNav, onCloseNav }) {
           variant="contained"
           color="inherit"
         >
-          выход
+          Выход
         </Button>
       </Stack>
     </Box>

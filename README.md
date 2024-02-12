@@ -1,4 +1,4 @@
-## Minimal [(Free version)](https://minimal-kit-react.vercel.app/)
+## Kubtel [(Free version)](https://minimal-kit-react.vercel.app/)
 
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
@@ -25,17 +25,17 @@
 
 ## Upgrade to PRO Version
 
-| Minimal Free     | [Minimal Pro](https://material-ui.com/store/items/minimal-dashboard/) |
-| :--------------- | :-------------------------------------------------------------------- |
-| **6** Demo Pages | **70+** Demo Pages                                                    |
-| -                | Authentication with **Amplify**, **Auth0**, **JWT** and **Firebase**  |
-| -                | [+More components](https://minimals.cc/components)                    |
-| -                | Dark & light mode                                                     |
-| -                | Next.js version                                                       |
-| -                | TypeScript version (Standard Plus and Extended license)               |
-| -                | Design Figma File (Standard Plus and Extended license)                |
-| -                | Complete Users Flows                                                  |
-| -                | Learn more: [Package & License](https://docs.minimals.cc/package)     |
+| Kubtel Free      | [Kubtel Pro](https://material-ui.com/store/items/minimal-dashboard/) |
+| :--------------- | :------------------------------------------------------------------- |
+| **6** Demo Pages | **70+** Demo Pages                                                   |
+| -                | Authentication with **Amplify**, **Auth0**, **JWT** and **Firebase** |
+| -                | [+More components](https://minimals.cc/components)                   |
+| -                | Dark & light mode                                                    |
+| -                | Next.js version                                                      |
+| -                | TypeScript version (Standard Plus and Extended license)              |
+| -                | Design Figma File (Standard Plus and Extended license)               |
+| -                | Complete Users Flows                                                 |
+| -                | Learn more: [Package & License](https://docs.minimals.cc/package)    |
 
 ## License
 

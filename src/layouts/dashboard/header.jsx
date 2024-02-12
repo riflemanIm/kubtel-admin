@@ -28,19 +28,33 @@ export default function Header({ onOpenNav }) {
   const renderContent = (
     <>
       {!lgUp && (
-        <IconButton onClick={onOpenNav} sx={{ mr: 1 }}>
+        <IconButton onClick={onOpenNav}>
           <Iconify icon="eva:menu-2-fill" />
         </IconButton>
       )}
 
       {/* <Searchbar /> */}
-      <Typography variant="h4" sx={{ mb: 3 }}>
-        Управление услугой телевидения
-      </Typography>
+
+      <Box mr={3}>
+        <Typography variant="h3" sx={{ lineHeight: 0.8, fontWeight: 900 }}>
+          25
+        </Typography>
+        <Typography variant="caption">сентября</Typography>
+      </Box>
+      <Box>
+        <Typography variant="h5" sx={{ color: '#1B2124', fontWeight: 500 }}>
+          Управление услугой телевидения
+        </Typography>
+      </Box>
+
       <Box sx={{ flexGrow: 1 }} />
 
       <Stack direction="row" alignItems="center" spacing={1}>
         {/* <LanguagePopover /> */}
+        <Typography variant="h5" sx={{ color: '#97999B', fontWeight: 500 }}>
+          РосИнфоКом
+        </Typography>
+
         <NotificationsPopover />
         <AccountPopover />
       </Stack>
@@ -63,12 +77,21 @@ export default function Header({ onOpenNav }) {
           width: `calc(100% - ${NAV.WIDTH + 1}px)`,
           height: HEADER.H_DESKTOP,
         }),
+        bgcolor: theme.palette.background.paper,
+        color: 'unset',
+        px: 0,
       }}
     >
       <Toolbar
         sx={{
           height: 1,
-          px: { lg: 5 },
+
+          border: 0,
+          borderBottomColor: theme.palette.grey[300],
+          borderStyle: 'solid',
+          borderBottomWidth: 'thin',
+          px: 1,
+          mx: 2,
         }}
       >
         {renderContent}
