@@ -1,3 +1,5 @@
+import tinycolor from 'tinycolor2';
+
 import { alpha } from '@mui/material/styles';
 
 // ----------------------------------------------------------------------
@@ -17,13 +19,20 @@ export const grey = {
   900: '#161C24',
 };
 
+const lighterenRate = 1.5;
+const lightenRate = 7.5;
+const darkenRate = 15;
+const darkerRate = 30;
+
+const PRIMARY = '#F63D74';
+
 export const primary = {
-  lighter: '#D0ECFE',
-  light: '#73BAFB',
-  main: '#1877F2',
-  dark: '#0C44AE',
-  darker: '#042174',
-  contrastText: '#FFFFFF',
+  lighter: tinycolor(PRIMARY).lighten(lighterenRate).toHexString(),
+  main: PRIMARY,
+  light: tinycolor(PRIMARY).lighten(lightenRate).toHexString(),
+  dark: tinycolor(PRIMARY).darken(darkenRate).toHexString(),
+  darker: tinycolor(PRIMARY).darken(darkerRate).toHexString(),
+  contrastText: '#fff',
 };
 
 export const secondary = {
